@@ -203,7 +203,7 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_margin="8dp"
         android:clickable="true"
         android:src="@drawable/ic_flower"
         app:layout_anchor="@id/header"
