@@ -18,7 +18,7 @@
             android:background="@color/putih">
 
             <EditText
-                style="@style/FontEdt"
+                style="@style/ForLarge"
                 android:hint="@string/income"
                 android:textAlignment="center"
                 android:layout_weight="1"
@@ -27,7 +27,7 @@
                 ></EditText>
 
             <EditText
-                style="@style/FontEdt"
+                style="@style/ForLarge"
                 android:hint="@string/outcome"
                 android:textAlignment="center"
                 android:layout_weight="1"
@@ -36,10 +36,9 @@
                 ></EditText>
 
             <TextView
-                style="@style/FontEdt"
+                style="@style/ForLarge"
                 android:hint="@string/output2"
                 android:gravity="center|center"
-                android:textSize="20sp"
                 android:layout_weight="5"
 
                 ></TextView>
@@ -62,75 +61,57 @@
                 >
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ForLarge"
                     android:layout_column="1"
                     android:id="@+id/button1"
                     android:text="1"
-                    android:textSize="16sp"
                     android:background="@color/biru"
                     android:layout_weight="1"
                     />
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ForLarge"
                     android:layout_column="2"
-                    android:textSize="16sp"
                     android:text="2"
                     android:id="@+id/button2"
                     android:background="@color/biru"
                     android:layout_weight="1"/>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    style="@style/ForLarge"
                     android:layout_column="3"
                     android:id="@+id/button3"
-                    android:textSize="16sp"
                     android:text="3"
                     android:background="@color/biru"
                     android:layout_weight="1"/>
 
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/biru"
-                android:layout_weight="1">
-
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="1"
+                    style="@style/ForLarge"
+                    android:layout_column="4"
                     android:id="@+id/button4"
                     android:text="4"
-                    android:textSize="16sp"
                     android:background="@color/biru"
                     android:layout_weight="1"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="2"
-                    android:textSize="16sp"
+                    style="@style/ForLarge"
+                    android:layout_column="5"
                     android:id="@+id/button5"
                     android:text="5"
                     android:background="@color/biru"
                     android:layout_weight="1"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="3"
+                    style="@style/ForLarge"
+                    android:layout_column="6"
                     android:id="@+id/button6"
-                    android:textSize="16sp"
                     android:text="6"
                     android:layout_weight="1"
                     android:background="@color/biru"/>
 
+
             </TableRow>
+
 
             <TableRow
                 android:layout_width="match_parent"
@@ -138,74 +119,57 @@
                 android:layout_weight="1">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/ForLarge"
                     android:layout_column="1"
-                    android:textSize="16sp"
                     android:layout_weight="1"
                     android:id="@+id/button7"
                     android:text="7"
                     android:background="@color/biru"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/ForLarge"
                     android:layout_column="2"
-                    android:textSize="16sp"
                     android:id="@+id/button8"
                     android:layout_weight="1"
                     android:text="8"
                     android:background="@color/biru"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/ForLarge"
                     android:layout_column="3"
                     android:layout_weight="1"
-                    android:textSize="16sp"
                     android:text="9"
                     android:id="@+id/button9"
                     android:background="@color/biru"/>
 
-            </TableRow>
+                <Button
+                    style="@style/ForLarge"
+                    android:layout_weight="1"
+                    android:layout_column="4"
+                    android:id="@+id/button0"
+                    android:text="0"
+                    android:background="@color/biru"/>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1">
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/ForLarge"
                     android:layout_weight="1"
-                    android:textSize="16sp"
-                    android:layout_column="1"
+                    android:layout_column="5"
                     android:id="@+id/button_del"
                     android:text="@string/delete"
                     android:background="@color/biru"/>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_column="2"
-                    android:id="@+id/button0"
-                    android:textSize="16sp"
-                    android:text="0"
-                    android:background="@color/biru"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="3"
-                    android:textSize="16sp"
+                    style="@style/ForLarge"
+                    android:layout_column="6"
                     android:layout_weight="1"
                     android:text="@string/clear"
                     android:id="@+id/button_clr"
                     android:background="@color/biru"/>
 
-
             </TableRow>
+
 
         </TableLayout>
 
@@ -213,14 +177,9 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        style="@style/fabLarge"
         android:src="@drawable/ic_flower"
         app:layout_anchor="@id/header"
-        app:layout_anchorGravity="bottom|left|end"/>
-
-
-
+        app:layout_anchorGravity="bottom|right|end"/>
 
 </android.support.design.widget.CoordinatorLayout>

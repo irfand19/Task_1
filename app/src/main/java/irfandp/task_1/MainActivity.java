@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TabWidget;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, button_clr, button_del;
     EditText edt1, edt2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         button_del = (Button) findViewById(R.id.button_del);
         edt1 = (EditText) findViewById(R.id.edt1);
         edt2 = (EditText) findViewById(R.id.edt2);
+
 
         edt1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -225,6 +228,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
+
+    }
+
+    @Override
+    public void onClick(View v) {
 
     }
 }
