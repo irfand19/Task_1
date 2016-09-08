@@ -20,25 +20,27 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Income"
+                android:hint="@string/income"
                 android:textAlignment="center"
                 android:layout_weight="1"
-                android:id="@+id/masukan"
+                android:id="@+id/edt1"
+                android:textIsSelectable="true"
                 ></EditText>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Outcome"
+                android:hint="@string/outcome"
                 android:textAlignment="center"
                 android:layout_weight="1"
-                android:id="@+id/keluaran"
+                android:id="@+id/edt2"
+                android:textIsSelectable="true"
                 ></EditText>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Balance : Val"
+                android:hint="@string/output2"
                 android:gravity="center|center"
                 android:textSize="20sp"
                 android:layout_weight="5"
@@ -66,6 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_column="1"
+                    android:id="@+id/button1"
                     android:text="1"
                     android:textSize="16sp"
                     android:background="@color/biru"
@@ -78,6 +81,7 @@
                     android:layout_column="2"
                     android:textSize="16sp"
                     android:text="2"
+                    android:id="@+id/button2"
                     android:background="@color/biru"
                     android:layout_weight="1"/>
 
@@ -85,6 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_column="3"
+                    android:id="@+id/button3"
                     android:textSize="16sp"
                     android:text="3"
                     android:background="@color/biru"
@@ -102,6 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_column="1"
+                    android:id="@+id/button4"
                     android:text="4"
                     android:textSize="16sp"
                     android:background="@color/biru"
@@ -112,6 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_column="2"
                     android:textSize="16sp"
+                    android:id="@+id/button5"
                     android:text="5"
                     android:background="@color/biru"
                     android:layout_weight="1"/>
@@ -120,6 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_column="3"
+                    android:id="@+id/button6"
                     android:textSize="16sp"
                     android:text="6"
                     android:layout_weight="1"
@@ -138,6 +146,7 @@
                     android:layout_column="1"
                     android:textSize="16sp"
                     android:layout_weight="1"
+                    android:id="@+id/button7"
                     android:text="7"
                     android:background="@color/biru"/>
 
@@ -146,6 +155,7 @@
                     android:layout_height="wrap_content"
                     android:layout_column="2"
                     android:textSize="16sp"
+                    android:id="@+id/button8"
                     android:layout_weight="1"
                     android:text="8"
                     android:background="@color/biru"/>
@@ -157,6 +167,7 @@
                     android:layout_weight="1"
                     android:textSize="16sp"
                     android:text="9"
+                    android:id="@+id/button9"
                     android:background="@color/biru"/>
 
             </TableRow>
@@ -172,7 +183,8 @@
                     android:layout_weight="1"
                     android:textSize="16sp"
                     android:layout_column="1"
-                    android:text="Delete"
+                    android:id="@+id/button_del"
+                    android:text="@string/delete"
                     android:background="@color/biru"/>
 
                 <Button
@@ -180,6 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_column="2"
+                    android:id="@+id/button0"
                     android:textSize="16sp"
                     android:text="0"
                     android:background="@color/biru"/>
@@ -190,8 +203,10 @@
                     android:layout_column="3"
                     android:textSize="16sp"
                     android:layout_weight="1"
-                    android:text="Clear"
+                    android:text="@string/clear"
+                    android:id="@+id/button_clr"
                     android:background="@color/biru"/>
+
 
             </TableRow>
 

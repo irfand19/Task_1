@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Task_1</string>
+    <string name="income">Income</string>
+    <string name="outcome">Outcome</string>
+    <string name="output2">Balance : Val</string>
+    <string name="clear">Clear</string>
+    <string name="delete">Delete</string>
 </resources>
