@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Task_1</string>
+    <string name="income">Pendapatan</string>
+    <string name="outcome">Pengeluaran</string>
+    <string name="output2">Neraca : Nilai</string>
+    <string name="clear">Bersihkan</string>
+    <string name="delete">Hapus</string>
+</resources>
