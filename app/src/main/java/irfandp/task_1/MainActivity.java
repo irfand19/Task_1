@@ -3,11 +3,11 @@ package irfandp.task_1;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv1 = (TextView) findViewById(R.id.tv1);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
+        fab.setOnClickListener(this);
+        edt1.setOnClickListener(this);
+        edt2.setOnClickListener(this);
 
         edt1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button_clr.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText("0");
+                        edt1.setText("");
                     }
                 });
 
@@ -214,7 +217,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button_clr.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText("0");
+                        edt2.setText("");
                     }
                 });
 
@@ -234,21 +237,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                a = Integer.parseInt(String.valueOf(edt1.getText()));
-                b = Integer.parseInt(String.valueOf(edt2.getText()));
-                c = a-b;
-                tv1.setText("Balance : "+c);
-
-            }
-        });
 
     }
 
     @Override
     public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.fab:
+                String A = edt1.getText().toString();
+                String B = edt2.getText().toString();
+
+                if ((A.isEmpty()) && (B.isEmpty())){
+                    Toast.makeText(this, "Mohon isi data terlebih dahulu", Toast.LENGTH_LONG).show();
+                } else if (A.isEmpty()) {
+                    Toast.makeText(this, "Mohon isi data income terlebih dahulu", Toast.LENGTH_LONG).show();
+                } else if (B.isEmpty()){
+                    Toast.makeText(this, "Mohon isi data outcome terlebih dahulu", Toast.LENGTH_LONG).show();
+                } else {
+                    a = Integer.parseInt(String.valueOf(edt1.getText()));
+                    b = Integer.parseInt(String.valueOf(edt2.getText()));
+                    c = a - b;
+                    tv1.setText("Balance : " + c);
+                }
+
+                break;
+
+        }
+
 
     }
 }
