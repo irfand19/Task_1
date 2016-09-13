@@ -1,15 +1,20 @@
 package irfandp.task_1;
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button button0, button1, button2, button3, button4, button5, button6, button7, button8, button9, button_clr, button_del;
     EditText edt1, edt2;
+    int a,b,c;
+    TextView tv1;
 
 
     @Override
@@ -31,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button_del = (Button) findViewById(R.id.button_del);
         edt1 = (EditText) findViewById(R.id.edt1);
         edt2 = (EditText) findViewById(R.id.edt2);
+        tv1 = (TextView) findViewById(R.id.tv1);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
 
         edt1.setOnClickListener(new View.OnClickListener() {
@@ -110,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button_clr.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText("");
+                        edt1.setText("0");
                     }
                 });
 
@@ -207,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button_clr.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText("");
+                        edt2.setText("0");
                     }
                 });
 
@@ -227,8 +234,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                a = Integer.parseInt(String.valueOf(edt1.getText()));
+                b = Integer.parseInt(String.valueOf(edt2.getText()));
+                c = a-b;
+                tv1.setText("Balance : "+c);
 
-
+            }
+        });
 
     }
 
