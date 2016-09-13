@@ -4,10 +4,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/layout_oval"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -15,11 +23,10 @@
             android:orientation="vertical"
             android:layout_weight="1"
             android:id="@+id/header"
-            android:background="@color/putih">
+            android:background="@drawable/layout_oval2">
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/FontEdt"
                 android:hint="@string/income"
                 android:textAlignment="center"
                 android:layout_weight="1"
@@ -28,8 +35,7 @@
                 ></EditText>
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/FontEdt"
                 android:hint="@string/outcome"
                 android:textAlignment="center"
                 android:layout_weight="1"
@@ -38,13 +44,12 @@
                 ></EditText>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/FontEdt"
                 android:hint="@string/output2"
                 android:gravity="center|center"
                 android:textSize="20sp"
                 android:layout_weight="5"
-
+                android:id="@+id/tv1"
                 ></TextView>
 
         </LinearLayout>
@@ -219,9 +224,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:clickable="true"
         android:src="@drawable/ic_flower"
         app:layout_anchor="@id/header"
-        app:layout_anchorGravity="bottom|right|end"/>
+        app:layout_anchorGravity="bottom|left|end"/>
+
+
+
 
 </android.support.design.widget.CoordinatorLayout>

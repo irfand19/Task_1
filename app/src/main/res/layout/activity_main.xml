@@ -9,10 +9,10 @@
         android:layout_height="match_parent"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
-        android:src="@drawable/sharingan"/>
+        android:src="@drawable/layout_oval"/>
 
     <LinearLayout
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_gravity="center">
@@ -23,7 +23,7 @@
             android:orientation="vertical"
             android:layout_weight="1"
             android:id="@+id/header"
-            android:background="@color/putih">
+            android:background="@drawable/layout_oval2">
 
             <EditText
                 style="@style/FontEdt"

@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edt1.setOnClickListener(this);
         edt2.setOnClickListener(this);
 
+
         edt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,70 +51,70 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "1");
+                        edt1.setText(edt1.getText()+ "1");
                     }
                 });
 
                 button2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "2");
+                        edt1.setText(edt1.getText()+"2");
                     }
                 });
 
                 button3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "3");
+                        edt1.setText(edt1.getText()+ "3");
                     }
                 });
 
                 button4.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "4");
+                        edt1.setText(edt1.getText()+ "4");
                     }
                 });
 
                 button5.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "5");
+                        edt1.setText(edt1.getText()+"5");
                     }
                 });
 
                 button6.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "6");
+                        edt1.setText(edt1.getText()+ "6");
                     }
                 });
 
                 button7.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "7");
+                        edt1.setText(edt1.getText()+"7");
                     }
                 });
 
                 button8.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "8");
+                        edt1.setText(edt1.getText()+ "8");
                     }
                 });
 
                 button9.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "9");
+                        edt1.setText(edt1.getText()+"9");
                     }
                 });
 
                 button0.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText() + "0");
+                        edt1.setText(edt1.getText()+ "2");
                     }
                 });
 
