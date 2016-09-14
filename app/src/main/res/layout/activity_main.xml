@@ -32,7 +32,7 @@
                 android:layout_weight="1"
                 android:id="@+id/edt1"
                 android:textIsSelectable="true"
-                ></EditText>
+                />
 
             <EditText
                 style="@style/FontEdt"
@@ -41,7 +41,7 @@
                 android:layout_weight="1"
                 android:id="@+id/edt2"
                 android:textIsSelectable="true"
-                ></EditText>
+                />
 
             <TextView
                 style="@style/FontEdt"
@@ -50,7 +50,7 @@
                 android:textSize="20sp"
                 android:layout_weight="5"
                 android:id="@+id/tv1"
-                ></TextView>
+                />
 
         </LinearLayout>
 

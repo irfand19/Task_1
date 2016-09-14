@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+"2");
+                        edt1.setText(edt1.getText()+ "2");
                     }
                 });
 
