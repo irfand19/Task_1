@@ -47,74 +47,93 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         edt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 button1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+ "1");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "1"));
+                        edt1.setSelection(start1+1);
                     }
                 });
 
                 button2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+ "2");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "2"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
                 button3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+ "3");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "3"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
                 button4.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+ "4");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "4"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
                 button5.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+"5");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "5"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
                 button6.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+ "6");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "6"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
                 button7.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+"7");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "7"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
                 button8.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+ "8");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "8"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
                 button9.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+"9");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "9"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
                 button0.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt1.setText(edt1.getText()+ "2");
+                        int start1 = edt1.getSelectionStart();
+                        edt1.setText(edt1.getText().insert(start1, "0"));
+                        edt1.setSelection(start1 + 1);
                     }
                 });
 
@@ -128,13 +147,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button_del.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String str = edt1.getText().toString();
-                        if (str.length() >= 1) {
-                            str = str.substring(0, str.length() - 1);
-                            edt1.setText(str);
-                        } else if (str.length() <= 1) {
-                            edt1.setText("0");
+
+                        int cursorPosition = edt1.getSelectionStart();
+                        if (cursorPosition > 0) {
+                            edt1.setText(edt1.getText().delete(cursorPosition - 1, cursorPosition));
+                            edt1.setSelection(cursorPosition - 1);
                         }
+
+
+
+//                        int start1 = edt1.getSelectionStart();
+//                        String str = edt1.getText().toString();
+//                        if (str.length() >= 1) {
+//                            str = str.substring(0, start1 - 1);
+//                            edt1.setText(str);
+//                            edt1.setSelection(start1 + 1);
+//                        } else if (str.length() <= 1) {
+//                            edt1.setText("0");
+//                            edt1.setSelection(start1 + 1);
+//                        }
                     }
                 });
 
@@ -148,70 +179,90 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "1");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "1"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "2");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "2"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "3");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "3"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button4.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "4");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "4"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button5.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "5");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "5"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button6.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "6");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "6"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button7.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "7");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "7"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button8.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "8");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "8"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button9.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "9");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "9"));
+                        edt2.setSelection(start2 + 1);
                     }
                 });
 
                 button0.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        edt2.setText(edt2.getText() + "0");
+                        int start2 = edt2.getSelectionStart();
+                        edt2.setText(edt2.getText().insert(start2, "0"));
+                        edt2.setSelection(start2+1);
                     }
                 });
 
@@ -225,12 +276,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button_del.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String str = edt2.getText().toString();
-                        if (str.length() >= 1) {
-                            str = str.substring(0, str.length() - 1);
-                            edt2.setText(str);
-                        } else if (str.length() <= 1) {
-                            edt2.setText("0");
+                        int cursorPosition = edt2.getSelectionStart();
+                        if (cursorPosition > 0) {
+                            edt2.setText(edt2.getText().delete(cursorPosition - 1, cursorPosition));
+                            edt2.setSelection(cursorPosition - 1);
                         }
                     }
                 });
